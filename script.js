@@ -26,7 +26,7 @@ const getWeather = () => {
 		const hum = res.data.main.humidity;
 		const status = Object.assign({}, ...res.data.weather);
 
-		cityName.textContent = res.data.main;
+		cityName.textContent = res.data.name;
 		weather.textContent = status.main;
 		temperature.textContent = Math.floor(temp) + '°C';
 		humidity.textContent = hum + '%';
